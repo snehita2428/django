@@ -1,0 +1,6 @@
+<h3> Total vowel count : {{wc}} </h3>
+<br\>
+<h3> After removing vowels the updated string :   {{ytext}} </h3>
+<br/>
+<a href="{% url 'home' %}"><center> Return To HomePage</center> </a>
+
