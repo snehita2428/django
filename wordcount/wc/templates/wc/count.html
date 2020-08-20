@@ -1,0 +1,18 @@
+<a href="{% url 'home' %}"> Return To HomePage </a>
+<h3> Total words are {{wc}} </h3>
+<br\>
+<table width="30%">
+    <tr>
+        <th><center>Word</center></th>
+        <th><center>Length</center></th>
+		<th><center>Frequency</center></th>
+	</tr>
+	{% for name,length,f in ylist %}
+	<tr>
+		<th><center>{{name}}</center></th>
+		<th><center>{{length}}</center></th>
+		<th><center>{{f}}</center></th>
+	</tr>
+    {% endfor %}
+</table>	
+<br/>

@@ -1,4 +1,4 @@
-"""p1 URL Configuration
+"""wordcount URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -15,11 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app1 import views
+from wc import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('myhome/',views.home,name='home'),
-    path('aboutus/',views.aboutus,name='aboutus'),
-    path('myhobbies/',views.myhobbies,name='myhobbies'),
+    path('',views.home,name='home'),
+    path('count/',views.count,name='count'),
 ]
